@@ -19,7 +19,6 @@
 		<hutool.version>5.5.8</hutool.version>
 		<jasypt.version>3.0.3</jasypt.version>
 		<swagger.version>1.9.1.RELEASE</swagger.version>
-		<spring.cloud.hystrix.version>2.2.7.RELEASE</spring.cloud.hystrix.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,17 +41,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-			<version>${spring.cloud.hystrix.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.guava</groupId>
-					<artifactId>guava</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
